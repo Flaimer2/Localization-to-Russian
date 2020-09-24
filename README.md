@@ -1,2 +1,5 @@
-# Localization-to-Russian
-Localization to Russian
+# Перевод на русский плагины.
+Здесь я буду выкладывать переводы плагинов)
+
+
+# Для всех
