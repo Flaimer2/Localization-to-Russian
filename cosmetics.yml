@@ -1,0 +1,153 @@
+coins:
+   taskCompleted: 3
+   sabotageFix: 5
+   reportedBody: 1
+   calledMeeting: 0
+   ejected: 0
+   completedAllTasks: 25
+   imposterKill: 2
+   murdered: 0
+   winCrewmate: 100
+   loseCrewmate: 0
+   winImposter: 10
+   loseImposter: 0
+
+default_kill_sword: DIAMOND_SWORD
+
+kill_sword:
+   DIAMOND_SWORD:
+      material: DIAMOND_SWORD
+      display_name: '&eАлмазный меч'
+      name: "Diamond Sword"
+      slot: 10 # Slot in the select inventory
+      lore:
+         - '&aЭкипирован!'
+      lore2:
+         - '&aНажмите, чтобы экипировать'
+      lore3: # When item is not owned
+         - ''
+      price: 0
+      permission: ''
+   STONE_SWORD:
+      material: STONE_SWORD
+      display_name: '&eКаменный меч'
+      name: "Stone Sword"
+      slot: 11
+      lore:
+         - '&aЭкипирован!'
+      lore2:
+         - '&aНажмите, чтобы экипировать'
+      lore3:
+         - '&7Стоимость: &65,000 Денег'
+         - ''
+         - '&eНажмите, чтобы купить!'
+      price: 5000
+      permission: ''
+   STICK:
+      material: STICK
+      display_name: '&eПалка'
+      name: "Stick"
+      slot: 12
+      lore:
+         - '&aЭкипирован!'
+      lore2:
+         - '&aНажмите, чтобы экипировать'
+      lore3:
+         - '&7Стоимость: &67,500 Денег'
+         - ''
+         - '&eНажмите, чтобы купить!'
+      price: 7500
+      permission: ''
+   WOODEN_AXE:
+      material: WOODEN_AXE
+      display_name: '&eДеревянный топор'
+      name: "Wooden Axe"
+      slot: 13
+      lore:
+         - '&aЭкипирован!'
+      lore2:
+         - '&aНажмите, чтобы экипировать'
+      lore3:
+         - '&7Стоимость: &610,000 Денег'
+         - ''
+         - '&eНажмите, чтобы купить!'
+      price: 10000
+      permission: ''
+   BLAZE_ROD:
+      material: BLAZE_ROD
+      display_name: '&eОгненный стержень'
+      name: "Blaze Rod"
+      slot: 14
+      lore:
+         - '&aЭкипирован!'
+      lore2:
+         - '&aНажмите, чтобы экипировать'
+      lore3:
+         - '&7Стоимость: &650,000 Денег'
+         - ''
+         - '&eНажмите, чтобы купить!'
+      price: 50000
+      permission: ''
+   FEATHER:
+      material: FEATHER
+      display_name: '&eПеро'
+      name: "Feather"
+      slot: 15
+      lore:
+         - '&aЭкипирован!'
+      lore2:
+         - '&aНажмите, чтобы экипировать'
+      lore3:
+         - '&7Может быть приобретен только в'
+         - '&7магазине!'
+         - ''
+         - '&ehttp://store.server.net/'
+      price: 0
+      permission: amongus.kill_item.feather
+   CARROT_ON_A_STICK:
+      material: CARROT_ON_A_STICK
+      display_name: '&eУдочка с морковью'
+      name: "Carrot on a stick"
+      slot: 16
+      lore:
+         - '&aЭкипирован!'
+      lore2:
+         - '&aНажмите, чтобы экипировать'
+      lore3:
+         - '&7Может быть приобретен только в'
+         - '&7магазине!'
+         - ''
+         - '&ehttp://store.server.net/'
+      price: 0
+      permission: amongus.kill_item.carrot_on_a_stick
+   CARROT:
+      material: CARROT
+      display_name: '&eМорковь'
+      name: "Carrot"
+      slot: 19
+      lore:
+         - '&aЭкипирован!'
+      lore2:
+         - '&aНажмите, чтобы экипировать'
+      lore3:
+         - '&7Может быть приобретен только в'
+         - '&7магазине!'
+         - ''
+         - '&ehttp://store.server.net/'
+      price: 0
+      permission: amongus.kill_item.carrot
+   GOLDEN_SWORD:
+      material: GOLDEN_SWORD
+      display_name: '&eЗолотой меч'
+      name: "Golden Sword"
+      slot: 20
+      lore:
+         - '&aЭкипирован!'
+      lore2:
+         - '&aНажмите, чтобы экипировать'
+      lore3:
+         - '&7Стоимость: &6100,000 Денег'
+         - ''
+         - '&eНажмите, чтобы купить!'
+      price: 100000
+      permission: ''

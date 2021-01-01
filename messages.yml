@@ -1,0 +1,430 @@
+   # %prefix% Plugin's prefix
+# %arena% Arena's display name
+# /n New line
+game:
+   # %value% Time before the game starts
+   gameStartingTime: '%prefix%&eИгра начинается через %value%с'
+   gameStarting: '%prefix%&eИгра начинается прямо сейчас!'
+   arenaFull: '%prefix%&cАрена заполнена!'
+   notEnoughPlayers: '%prefix%&cНе хватает игроков!'
+   noArenasAvailable: "%prefix%&cНет доступных арен!"
+   arenaInGame: '%prefix%&cАрена запущенна!'
+   alreadyInGame: '%prefix%&cУже в игре'
+   arenaNotFound: "%prefix%&cАрены не существует!"
+   tasksBar: "&a&lВСЕГО ВЫПОЛНЕНО ЗАДАНИЙ"
+   gameStartImposters: ""
+   gameStartCrewmates: ""
+   # %value% Player name
+   # %value1% Player's color
+   # %value2% Player's color name
+   # %value3% Arena players
+   # %value4% Arena maximum players
+   playerJoin: '%prefix%%value1%%value% &eзашел.'
+   playerLeave: '%prefix%%value1%%value% &eвышел.'
+   # %value3% The message
+   chat: '&6%value1%%value%: &f%value3%'
+   ghostsChat: '&6[Ghost] %value1%%value%: &f%value3%'
+   # %value% The imposters of the game
+   impostersWonMsg: '&4&lПредатели выиграли!/n%value%'
+   crewmatesWonMsg: '&4&lЧлены экипажа выиграли!/n%value%'
+   # %value% Voter Color
+   voteSymbol: '%value%█ '
+   # %value% - Player Name, %value1% - player color, %value2% - votes
+   playerLine: '%value1%&l%value%: %value2%'
+   # %value% Votes
+   skipVoteLine: '&f&lПропустить голосование: %value%'
+   # %value% - All Player Lines
+   votingResults: '&c&lИтоги голосования:/n%value%'
+   # %value% - Player, %value1% - Player color
+   playerVoted: "&a%value% проголосовал."
+   skipped: "Пропускаем"
+   tie: "Ничья"
+   
+   # --- Titles Section ---
+   # When game starts
+   # %value% Imposters count
+   # %value1% Imposters of the game
+   crewmateTitle: "&9&lЧлен экипажа"
+   crewmateSubTitle: "&fЕсть %value% предателя"
+   imposterTitle: "&c&lПредатель"
+   imposterSubTitle: "%value1%"
+   # When there is only 1 imposter
+   imposterTitle1: "&c&lПредатель"
+   imposterSubTitle1: "%value1%"
+   crewmateTitle1: "&9&lЧлен экипажа"
+   crewmateSubTitle1: "&fЕсть %value% предатель"
+   # %value% Sabotage name
+   sabotageTitle: '&4Саботаж:'
+   sabotageSubTitle: '&4&l%value%'
+   # %value% The imposters of the game
+   winTitle: '&9&lПобеда'
+   winSubTitle: '&4%value%'
+   defeatTitle: '&4&lПоражение'
+   defeatSubTitle: '&4%value%'
+   # %value% - Player died name
+   # %value1% - Player died color
+   # %value2% - Player died color name
+   # %value3% - Called color
+   # %value4% - Called color name
+   bodyFoundTitle: "%value1%%value%"
+   bodyFoundSubTitle: "&cDEAD BODY REPORTED"
+   # %value% - Caller name
+   # %value1% - Caller color
+   # %value2% - Caller color name
+   emergencyMeetingTitle: "&fEMERGENCY MEETING"
+   emergencyMeetingSubTitle: "%value1%%value%"
+   # %value% Cause (Skipped, Tie)
+   # %value1% Imposters remains
+   noOneEjectedTitle: "%value1% предателя осталось."
+   noOneEjectedSubTitle: "Никто не был выброшен. (%value%)"
+   # Confirm ejects off
+   noOneEjectedTitle1: ""
+   noOneEjectedSubTitle1: "Никто не был выброшен. (%value%)"
+   # %value% - Player name, %value1% - Player color, %value2% Imposters remaining
+   playerWasTheImposterTitle: "%value2% предатель остался."
+   playerWasTheImposterSubTitle: "%value% был предателем."
+   playerWasNotTheImposterTitle: "%value2% предатель остался."
+   playerWasNotTheImposterSubTitle: "%value% не был предателем."
+   # when there is more than 1 imposter
+   playerWasAnImposterTitle: "%value2% предателей осталось."
+   playerWasAnImposterSubTitle: "%value% был предателем."
+   playerWasNotAnImposterTitle: "%value2% предятелей осталось."
+   playerWasNotAnImposterSubTitle: "%value% не был предателем."
+   # Confirm ejects off
+   playerEjectedTitle: ""
+   playerEjectedSubTitle: "%value% был выброшен."
+   # %value% killer name, %value1% killer color, %value2% killer color name eg (blue, red)
+   playerDiedTitle: "&cТы умер!"
+   playerDiedSubTitle: "&fУбит: %value1%&l%value%"
+   # %value% victim name, %value1% victim color, %value2% victim color name
+   playerKilledTitle: ""
+   playerKilledSubTitle: "&fУбитый: %value1%&l%value%"
+   sabotageFixedTitle: "&aСаботаж исправлен."
+   sabotageFixedSubTitle: ""
+   # %value% Task name
+   # %value1% Task location name
+   finishTaskTitle: ''
+   finishTaskSubTitle: '&fЗадание выполнена!'
+   # --- End ---
+   
+   # --- GUI Titles Section ---
+   arenasSelectorInvTitle: "&e&lВыбор арены"
+   colorSelectorInvTitle: "&e&lВыбор цвета"
+   meetingButtonInvTitle: "&4&lEmergency Meeting"
+   votingInvTitle: "&eКто предатель?"
+   votingInvTitle1: "&eИтоги голосования"
+   # %value% Task's name
+   # %value1% Task's location name
+   taskInvTitle: "&e%value1%: %value%"
+   # %value% Sabotage's name - found below 'tasks'
+   # %value1% Sabotage's title
+   sabotageLightsInvTitle: "&c%value%"
+   sabotageCommsInvTitle: "&c%value%"
+   # %value2% Today's code
+   # %value3% Code typed by player
+   sabotageOxygenInvTitle: "&c%value% (%value3%) (Сегодняшний код: %value2%)"
+   sabotageReactorsInvTitle: "&c%value%: Нажмите, чтобы остановить взрыв реактора"
+   sabotageReactorsInvTitle1: "&c%value%: Ожидание второго игрока"
+   sabotageReactorsInvTitle2: "&c%value%: Реактор нормальный"
+   vitalsInvTitle: "&eЖизненные показатели"
+   cosmeticsSelectorInvTitle: "&eВыберите косметический предмет для убийства"
+   # --- End ---
+   
+   # --- Action Bars ---
+   # %value% Players ingame
+   # %value1% Maximum players ingame
+   # %value2% Chance to get imposter 
+   lobbyActionBar: "&f&l%value%/%value1% игроков"
+   # Action bar sent to all the imposters
+   # %value% All imposters
+   impostersActionBar: "&c&lПредателей: %value%"
+   # %value% Seconds left
+   votingBeginsInActionBar: "&lГолосование начнется через %value%с"
+   votingEndsInActionBar: "&lГолосование закончится через %value%с" 
+   proceedingInActionBar: "&lОбсуждение закончится через %value%с"
+   killCooldownActionBar: "&c&lПерезарядка убийства: %value%s"
+   # %value% Location name
+   ventActionBar: "&c&lВентиляция: %value%"
+   cameraActionBar: "&c&lКамера: %value%"
+   # When location name is none
+   ventActionBar1: "&c&lВентиляция"
+   cameraActionBar1: "&c&lКамера"
+   # --- End ---
+   
+   # --- Boss Bars ---   
+   # %value% Seconds left
+   killCooldownBossBar: "&c&lПерезарядка убийства: %value%s"
+   sabotageCooldownBossBar: "&c&lПерезарядка саботажа: %value%s"
+   # %value% Sabotage title
+   # %value1% Sabotage name
+   sabotageBossBar: "&4&l%value%"
+   # Sabotage with a timer
+   # %value% Sabotage title
+   # %value1% Sabotage name
+   # %value2% Seconds left
+   # %value3% - Extra "(0/2)" for oxygen / reactor
+   sabotageBossBarTimer: "&4&l%value%: %value2%с %value3%"
+   # --- End ---
+   
+   votingBeginsInMsg: ""
+   votingEndsInMsg: "Голосование закончится через %value%с" 
+   proceedingInMsg: ""
+   # %value% killer name, %value1% killer color, %value2% killer color name eg (blue, red)
+   # leave the msg empty if you dont want to send it
+   playerDiedMsg: "&cВы умерли!/n&cЗавершите свои задания, чтобы победить."
+   playerEjectedMsg: "&cВы были выброшены!/n&cЗавершите свои задания, чтобы победить."
+   imposterEjectedMsg: "&cВы были выброшены!/n&cВы все еще можете делать саботажи."
+   # Cosmetics stuff
+   # %value% The cosmetic name
+   # %value1% Player coins
+   selectedCosmetic: "%prefix%&aВы выбрали %value%"
+   # %value2% Coins 
+   playerBoughtCosmetic: "%prefix%&aУспешно приобретён %value% за %value2% денег."
+   notEnoughCoins: "%prefix%&cУ тебя не хватает денег, чтобы сделать это!"
+   # %value% Coins the player got
+   playerCoins: "&a+%value% деньги"
+
+# For download / upload task
+# Updates every second
+# uploadData_start & downloadData_start in items.yml
+estimatedTimes:
+   - "&lПримерное время: 4д 17ч 53м 2с"
+   - "&lПримерное время: 18ч 17м 16с"
+   - "&lПримерное время: 16ч 13м 36с"
+   - "&lПримерное время: 1ч 11м 5с"
+   - "&lПримерное время: 12м 22с"
+   - "&lПримерное время: 3с"
+   - "&lПримерное время: 2с"
+   - "&lПримерное время: 1с"
+   - "&lПримерное время: 0с"
+   - "&a&lЗакончилось"
+
+gameStates:
+   RUNNING: "RUNNING"
+   WAITING: "WAITING"
+   STARTING: "STARTING"
+   FINISHING: "FINISHING"
+
+tasks:
+   wiring:
+      name: 'Почините провода'
+   scan:
+      name: 'Подтвердите сканирование'
+   download_data:
+      name: 'Скачайте данные'
+   upload_data:
+      name: 'Загрузите данные'
+   divert_power:
+      name: 'Проведите энергию'
+   accept_diverted_power:
+      name: "Примите отправленную энергию"
+   unlock_manifolds:
+      name: 'Разблокируйте трубопровод'
+   prime_shields:
+      name: 'Почините щиты'
+   calibrate_distributor:
+      name: 'Откалибруйте передатчик'
+   empty_garbage:
+      name: 'Выбросите мусор'
+   clean_o2:
+      name: 'Очистите кислородный фильтр'
+   refuel:
+      name: 'Очистите отсек'
+   fuel:
+      name: 'Заправьте двигатели'
+   inspect_sample:
+      name: 'Исследуйте образец'
+   start_reactor:
+      name: 'Запустите реактор'
+   clear_asteroids:
+     name: 'Раскромсайте астероиды'
+   swipe_card:
+     name: 'Проведите картой'
+   # Version 1.2:
+   chart_course:
+     name: 'Организуйте маршут'
+   stabilize_steering:
+     name: "Стабилизируйте управление"
+   # Version 1.7:
+   fill_canisters:
+     name: "Наполните канистры"
+   insert_keys:
+     name: "Вставьте ключи"
+   replace_water_jug:
+     name: "Замените кулер"
+   record_temperature:
+     name: "Запишите температуру"
+   repair_drill:
+     name: "Почините дрель"
+   monitor_tree:
+     name: "Диагностируйте дерево"
+   open_waterways:
+     name: "Откройте трубопровод"
+   reboot_wifi:
+     name: "Перезапустите WiFi"
+   fix_weather_node:
+     name: "Почините погодный узел"
+   switch_weather_node:
+     name: "Почините погодный узел"
+   scan_boarding_pass:
+     name: "Сканируйте посадочный талон"
+   store_artifacts:
+     name: "Сложите артефакты"
+   # Sabotages
+   lights:
+      name: 'Свет'
+      title: 'Почините свет'
+   reactor_meltdown:
+      name: 'Взрыв реактора'
+      title: 'Взрыв реактора'
+   oxygen:
+      name: 'Кислород'
+      title: 'Утечка кислорода'
+   communications:
+      name: 'Связь'
+      title: 'Саботаж коммуникационного модуля'
+   
+      
+
+# For floating items:
+# @MATERIAL@ - Example: '@RED_CONCRETE@'
+holograms:
+   meetingButton:
+      - "&cEmergency"
+      - "&cMeeting"
+      - "@REDSTONE_BLOCK@"
+   # %value% Task's name
+   # %value1% Task's location name
+   task:
+      - "&e%value1%:"
+      - "&e%value%"
+   cameras:
+      - "&c-----"
+      - "&cКамеры"
+      - "&c-----"
+   # %value% Sabotage name
+   # %value1% Sabotage title
+   sabotage:
+      - "&c%value%"
+   # %value% Vent's location name (if it has one)
+   vent: 
+      - ""
+   vitals:
+      - "&c-----"
+      - "&cЖизненные показатели"
+      - "&c-----"
+
+# Join signs
+# %arena% Arena's name
+# %arena1% Arena's display name
+# %players% Current players
+# %maxplayers% Maximum players for arena
+# %statecolor% Arena's game state color
+# %state% Arena's game state
+arenaSignsLines:
+   - "&4&lAmong&c&lUs&9&lMC"
+   - "%statecolor%%state%"
+   - "&0%arena1%"
+   - "&8%players%/%maxplayers%"
+
+
+
+# Stats:
+# %games_played%
+# %imposter_wins%
+# %crewmate_wins%
+# %total_wins%
+# %imposter_kills%
+# %tasks_completed%
+# %emergencies_called%
+# %bodies_reported%
+# %times_murdered%
+# %times_ejected%
+
+# %prefix% Plugin's prefix
+# %arena% Current arena's display name
+# %emptyline% Empty line
+scoreboard:
+   title: '&e&lAmong&e&l Us'
+   # --------- Main lobby scoreboard ---------
+   main-lobby-lines:
+      - '%emptyline%'
+      - ' &8&m   &r &c&lСтатистика Предателя &8&m   &r'
+      - '&fПобед: &a%imposter_wins%'
+      - '&fУбийств: &a%imposter_kills%'
+      - '%emptyline%'
+      - ' &8&m   &r &3&lСтатистика Члена Экипажа &8&m   &r'
+      - '&fПобед: &a%crewmate_wins%'
+      - '&fВыполнено заданий: &a%tasks_completed%'
+      - '&fТел зарепорчино: &a%bodies_reported%'
+      - '%emptyline%'
+      - ' &8&m   &r &b&lMiscellaneous &8&m   &r'
+      - '&fСыграно игр: &a%games_played%'
+      - '%emptyline%'
+      - '&aserver.ip'
+   # --------- while in waiting lobby ---------
+   # %player% Player's name
+   # %playercolor% Player's color
+   # %playercolorname% Player's color name
+   # %players% - Current players in arena
+   # %minplayers% - Arena minimum players
+   # %maxplayers% - Arena maximum players
+   # %gamestarttime% - Arena start timer 
+   # %gamestate% - Arena state
+   waiting-lobby-lines:
+      - '%emptyline%'
+      - "&9&lАрена:"
+      - "&a%arena%"
+      - '%emptyline%'
+      - '&9&lИгроки:'
+      - '&a%players%/%maxplayers%'
+      - '%emptyline%'
+      - '&aserver.ip'
+   # --------- while playing ---------
+   # %task% Task's name
+   # %taskloc% Task's location
+   # %taskcolor% not done - red, half done - yellow, done - green
+   # %state% if there are multiple tasks - for example (0/2)
+   taskLine: '%taskcolor%&l✘ %task% %state%'
+   taskDoneLine: '%taskcolor%&l✔ %task% %state%'
+   # %player% Player's name
+   # %playercolor% Player's color
+   # %playercolorname% Player's color name
+   # %playerteam% Player's teams (imposter, crewmate)
+   # %tasks% All player's tasks
+   crewmate-lines: 
+      - '%emptyline%'
+      - '%playercolor%&lВы %playercolorname%.'
+      - '%emptyline%'
+      - '&7&lЗадание:'
+      - '%tasks%'
+      - '%emptyline%'
+      - '&aserver.ip'
+   imposter-lines: 
+      - '%emptyline%'
+      - '&4&lУстраивай саботажи и убей'
+      - '&4&lвсех членов экипажа.'
+      - '%emptyline%'
+      - '&f&lФальшивые задания:'
+      - '%tasks%'
+      - '%emptyline%'
+      - '&aserver.ip'
+   dead-crewmate-lines: 
+      - '%emptyline%'
+      - '%playercolor%&lВы %playercolorname%.'
+      - "&4&lТы умер."
+      - '%emptyline%'
+      - "&4&lЗадания"
+      - '%tasks%'
+      - '%emptyline%'
+      - '&aserver.ip'
+   dead-imposter-lines: 
+      - '%emptyline%'
+      - '%playercolor%&lВы %playercolorname%.'
+      - "&4&lВас выкинули."
+      - '%emptyline%'
+      - '&4&lВы все еще можете' 
+      - 'делать саботажи'
+      - '%emptyline%'
+      - '&aserver.ip'
+      

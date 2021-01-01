@@ -1,0 +1,1197 @@
+prefix: '&4&lAmong&c&lUs&9&lMC&7&l► '
+giveLobbyItems: true
+showRunningArenas: true
+ghostsFly: true
+hidePlayersOutSideArena: false
+enableGlassHelmet: true
+tpToLobbyOnJoin: true
+viewGlassMat: BLACK_STAINED_GLASS
+enablePortalJoin: false
+scoreboardUsePackets: true
+
+bungeecord:
+   enabled: false
+   lobby: false
+   lobbyServer: "lobby"
+   gameServers:
+      - "game"
+   serverName: "game"
+
+# enableLobbyScoreboard: Main lobby scoreboard
+enableLobbyScoreboard: true
+
+# gameEndSendToLobby - Send players to lobby after the game ends
+gameEndSendToLobby: true
+particlesOnTasks: true
+# particlesOnTasksType particles: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Particle.html
+particlesOnTasksType: VILLAGER_HAPPY
+
+lobbyItemsSlots:
+   arenasSelector: 0
+   cosmeticSelector: 1
+
+mainLobby:
+   world: 'world'
+   x: 0
+   y: 60
+   z: 0
+
+mysql:
+   enabled: false
+   host: "localhost"
+   port: "3306"
+   database: "test"
+   username: "user"
+   password: "pass"
+
+
+commands: # %player% - Player's name
+   taskCompleted: []
+   sabotageFix: []
+   reportedBody: []
+   calledMeeting: []
+   ejected: []
+   completedAllTasks: []
+   imposterKill: []
+   murdered: []
+   winCrewmate: [] # Win as crewmate
+   loseCrewmate: [] # Lose as crewmate
+   winImposter: []
+   loseImposter: []
+   gameStartImposter: []
+   gameStartCrewmate: []
+
+blockedCommands:
+   - /msg
+   - /r
+   - /whisper
+
+asteroidsParticleColor: 255,0,0 # RGB
+asteroidsParticleMaterial: REDSTONE_BLOCK 
+
+# ChatColors: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/ChatColor.html
+colors:
+   BLACK:
+      name: "Черный"
+      chatColor: BLACK # Chat color in chat
+      helmetBlock: BLACK_STAINED_GLASS # Block placed on head
+      woolBlock: BLACK_WOOL # For select color inventory
+      armorColor: "0,0,0"
+      id: "BLAP" # Medbay scan stuff:
+      height: "3'6"
+      weight: "92 lbs"
+      bloodType: "A+"
+   BLUE:
+      name: "Синий"
+      chatColor: BLUE
+      helmetBlock: BLUE_STAINED_GLASS
+      woolBlock: BLUE_WOOL
+      armorColor: "0,0,255"
+      id: "BLUP"
+      height: "3'6"
+      weight: "92 lbs"
+      bloodType: "O+"
+   GRAY:
+      name: "Серый"
+      chatColor: DARK_GRAY
+      helmetBlock: GRAY_STAINED_GLASS
+      woolBlock: LIGHT_GRAY_WOOL
+      armorColor: "128,128,128"
+      id: "GRAP"
+      height: "3'6"
+      weight: "92"
+      bloodType: ""
+   CYAN:
+      name: "Голубой"
+      chatColor: AQUA
+      helmetBlock: CYAN_STAINED_GLASS
+      woolBlock: LIGHT_BLUE_WOOL
+      concreteBlock: LIGHT_BLUE_CONCRETE
+      armorColor: "0,255,255"
+      id: "CYAP"
+      height: "3'6"
+      weight: "92"
+      bloodType: "A+"
+   GREEN:
+      name: "Зеленый"
+      chatColor: DARK_GREEN
+      helmetBlock: GREEN_STAINED_GLASS
+      woolBlock: GREEN_WOOL
+      armorColor: "0,128,0"
+      id: "GREP"
+      height: "3'6"
+      weight: "92"
+      bloodType: "O-"
+   LIME:
+      name: "Лаймовый"
+      chatColor: GREEN
+      helmetBlock: LIME_STAINED_GLASS
+      woolBlock: LIME_WOOL
+      armorColor: "0,255,0"
+      id: "LIMP"
+      height: "3'6"
+      weight: "92"
+      bloodType: "A-"
+   ORANGE:
+      name: "Оранжевый"
+      chatColor: GOLD
+      helmetBlock: ORANGE_STAINED_GLASS
+      woolBlock: ORANGE_WOOL
+      armorColor: "255,165,0"
+      id: "ORAP"
+      height: "3'6"
+      weight: "92"
+      bloodType: "O-"
+   PINK:
+      name: "Розовый"
+      chatColor: LIGHT_PURPLE
+      helmetBlock: PINK_STAINED_GLASS
+      woolBlock: PINK_WOOL
+      armorColor: "255,0,255"
+      id: "PINP"
+      height: "3'6"
+      weight: "92"
+      bloodType: "B+"
+   PURPLE:
+      name: "Фиолетовый"
+      chatColor: DARK_PURPLE
+      helmetBlock: PURPLE_STAINED_GLASS
+      woolBlock: PURPLE_WOOL
+      armorColor: "75,0,130"
+      id: "PURP"
+      height: "3'6"
+      weight: "92"
+      bloodType: "B-"
+   RED:
+      name: "Красный"
+      chatColor: RED
+      helmetBlock: RED_STAINED_GLASS
+      woolBlock: RED_WOOL
+      armorColor: "255,0,0"
+      id: "WHIP"
+      height: "3'6"
+      weight: "92"
+      bloodType: "O-"
+   WHITE:
+      name: "Белый"
+      chatColor: WHITE
+      helmetBlock: WHITE_STAINED_GLASS
+      woolBlock: WHITE_WOOL
+      armorColor: "255,255,255"
+      id: "WHIP"
+      height: "3'6"
+      weight: "92"
+      bloodType: "AB-"
+   YELLOW:
+      name: "Желтый"
+      chatColor: YELLOW
+      helmetBlock: YELLOW_STAINED_GLASS
+      woolBlock: YELLOW_WOOL
+      armorColor: "255,255,0"
+      id: "YELP"
+      height: "3'6"
+      weight: "92"
+      bloodType: "AB+"
+arenas:
+  TheSkeld:
+    displayname: TheSkeld
+    spawnpoints:
+    - world,8.5,25,112.5,93.819885,8.019825
+    - world,8.5,25,111.5,89.839905,17.908886
+    - world,7.5,25,109.5,44.553406,14.954254
+    - world,5.5,25,108.5,3.6078491,2.8341696
+    - world,4.5,25,108.5,358.90424,0.8443282
+    - world,2.5,25,109.5,315.96875,1.7488476
+    - world,1.5,25,111.5,276.41016,1.2061721
+    - world,1.5,25,112.5,266.70142,1.5076731
+    - world,2.5,25,114.5,226.29865,0.54292744
+    - world,3.5,25,115.5,208.14899,4.1005974
+    minplayers: 2
+    maxplayers: 10
+    mapcenter: world,-4,29,129
+    meetingbtn: world,4.99444406270626,27.25,112.02963298694635
+    tasks:
+      KWqU:
+        type: DOWNLOAD_DATA
+        location: world,15.524285978698554,26.85,101.54201205957288
+        locationid: 0zNl
+        queuedtasks:
+          JA3F:
+          - t903
+        isenabled: true
+      t903:
+        type: UPLOAD_DATA
+        location: world,12.526208489609248,26.85,131.42463840797097
+        locationid: s4Qe
+        queuedtasks: {}
+        isenabled: false
+      u1MQ:
+        type: EMPTY_GARBAGE
+        location: world,18.583712615890448,26.85,105.52590893301603
+        locationid: 0zNl
+        queuedtasks:
+          AD1s:
+          - 6S71
+        isenabled: true
+        enablevisuals: false
+      6S71:
+        type: EMPTY_GARBAGE
+        location: world,8.407535692019222,26.85,158.5219263436595
+        locationid: C87I
+        queuedtasks: {}
+        isenabled: false
+        enablevisuals: true
+      7WYM:
+        type: DOWNLOAD_DATA
+        location: world,16.5170991420736,26.85,153.302091038993
+        locationid: Gbd0
+        queuedtasks:
+          SJ1D:
+          - t903
+        isenabled: true
+      q5Hz:
+        type: DIVERT_POWER
+        location: world,-17.48846183248404,26.85,133.557272897696
+        locationid: ithC
+        queuedtasks:
+          QLnC:
+          - 1Bv4
+          1FpD:
+          - 01S1
+          8bBy:
+          - R1VM
+          swOU:
+          - 0W9Y
+          JB6Z:
+          - vBD8
+          04DH:
+          - torr
+          NI3I:
+          - uqzT
+          CflP:
+          - UIip
+        isenabled: true
+      D83f:
+        type: WIRING
+        location: world,-14.543822995643826,26.85,134.54925813011212
+        locationid: ithC
+        queuedtasks:
+          EzDI:
+          - OXVH
+          - vhF2
+          Cl2R:
+          - wfrZ
+          - vhF2
+        isenabled: true
+      jGbP:
+        type: WIRING
+        location: world,10.491360758736334,26.85,131.46224106312437
+        locationid: s4Qe
+        queuedtasks:
+          vDh9:
+          - ZLa0
+          - vhF2
+        isenabled: true
+      vhF2:
+        type: WIRING
+        location: world,-33.52614080209537,26.85,126.49906587529169
+        locationid: DGyZ
+        queuedtasks:
+          0n2S: []
+        isenabled: false
+      SJOf:
+        type: CLEAR_ASTEROIDS
+        location: world,30.366243975350194,26.85,109.60255275456164
+        locationid: UuhC
+        queuedtasks:
+          CuVX: []
+        isenabled: true
+        enablevisuals: true
+        cannon1: world,41.300451002095265,25.62000000476837,112.46441534285655,270.39072,-21.855053
+        cannon2: world,41.30645476513347,25.62000000476837,110.53025721793323,270.39072,-21.855053
+      O0jT:
+        type: DOWNLOAD_DATA
+        location: world,-18.417348738566787,26.85,133.414302134041
+        locationid: ithC
+        queuedtasks:
+          mONg:
+          - t903
+        isenabled: true
+      OzjF:
+        type: CALIBRATE_DISTRIBUTOR
+        location: world,-8.438760394919145,26.85,134.40532044202558
+        locationid: ithC
+        queuedtasks:
+          yCwj: []
+        isenabled: true
+      lUMD:
+        type: SCAN
+        location: world,-13.969097281312084,27.85,128.01689311661735
+        locationid: Olbk
+        queuedtasks:
+          zQ6Q: []
+        isenabled: true
+        enablevisuals: true
+      QbC3:
+        type: INSPECT_SAMPLE
+        location: world,-11.300000011920929,26.85,125.30000001192093
+        locationid: Olbk
+        queuedtasks:
+          Xu4s: []
+        isenabled: true
+      pqCm:
+        type: DOWNLOAD_DATA
+        location: world,50.47737911249655,26.85,121.4789600758811
+        locationid: uDDr
+        queuedtasks:
+          5dOD:
+          - t903
+        isenabled: true
+      0v2N:
+        type: CLEAN_O2
+        location: world,21.3432580016979,26.85,122.47709187587
+        locationid: gtCV
+        queuedtasks:
+          JWfY: []
+        isenabled: true
+      4ltY:
+        type: EMPTY_GARBAGE
+        location: world,18.53707467844858,26.85,123.5199007367188
+        locationid: gtCV
+        queuedtasks:
+          ZoJX:
+          - 6S71
+        isenabled: true
+        enablevisuals: false
+      VqpQ:
+        type: START_REACTOR
+        location: world,-49.69999998807907,25.85,127.62648829429621
+        locationid: Wy11
+        queuedtasks:
+          cU9o: []
+        isenabled: true
+      va2Q:
+        type: UNLOCK_MANIFOLDS
+        location: world,-53.5775303512487,26.85,121.31096774990232
+        locationid: Wy11
+        queuedtasks:
+          m4TG: []
+        isenabled: true
+      Tkvw:
+        type: PRIME_SHIELDS
+        location: world,26.305145985434542,26.85,151.47995221708675
+        locationid: ecH1
+        queuedtasks:
+          8wGl: []
+        isenabled: true
+        enablevisuals: true
+      YW92:
+        type: REFUEL
+        location: world,-1.594996105392277,26.85,149.4647983641566
+        locationid: C87I
+        queuedtasks:
+          fcxh:
+          - A1gB
+          - YW92
+          - TCQz
+        isenabled: true
+      A1gB:
+        type: FUEL
+        location: world,-41.59337384893472,26.85,114.54998544101085
+        locationid: CoNp
+        queuedtasks:
+          aYeY: []
+        isenabled: false
+      TCQz:
+        type: FUEL
+        location: world,-41.69999998807907,26.85,147.48750001192093
+        locationid: BsQ6
+        queuedtasks:
+          W7td: []
+        isenabled: false
+      b53M:
+        type: DOWNLOAD_DATA
+        location: world,29.48750001192093,26.85,104.30000001192093
+        locationid: UuhC
+        queuedtasks:
+          P0AZ:
+          - t903
+        isenabled: true
+      1Bv4:
+        type: ACCEPT_DIVERTED_POWER
+        location: world,22.52248660460053,26.85,152.6453090242517
+        locationid: Gbd0
+        queuedtasks:
+          kaSG: []
+        isenabled: false
+      01S1:
+        type: ACCEPT_DIVERTED_POWER
+        location: world,35.60092004534097,26.85,141.5208358251933
+        locationid: ecH1
+        queuedtasks:
+          Gv9R: []
+        isenabled: false
+      R1VM:
+        type: ACCEPT_DIVERTED_POWER
+        location: world,48.4650044729205,26.85,121.30000001192093
+        locationid: uDDr
+        queuedtasks:
+          iGHT: []
+        isenabled: false
+      0W9Y:
+        type: ACCEPT_DIVERTED_POWER
+        location: world,28.501143415273148,26.85,120.30000001192093
+        locationid: gtCV
+        queuedtasks:
+          a6L0: []
+        isenabled: false
+      vBD8:
+        type: ACCEPT_DIVERTED_POWER
+        location: world,36.57534453981546,26.85,109.51450825173968
+        locationid: UuhC
+        queuedtasks:
+          ogPd: []
+        isenabled: false
+      torr:
+        type: ACCEPT_DIVERTED_POWER
+        location: world,-38.48444469823839,26.85,106.4246515370609
+        locationid: CoNp
+        queuedtasks:
+          PRXF: []
+        isenabled: false
+      uqzT:
+        type: ACCEPT_DIVERTED_POWER
+        location: world,-25.30000001192093,26.85,123.53418872580811
+        locationid: DGyZ
+        queuedtasks:
+          5csr: []
+        isenabled: false
+      UIip:
+        type: ACCEPT_DIVERTED_POWER
+        location: world,-40.62655074646803,26.85,139.37964648559003
+        locationid: BsQ6
+        queuedtasks:
+          eWJQ: []
+        isenabled: false
+      wfrZ:
+        type: WIRING
+        location: world,43.55755325509718,26.85,124.4884375329465
+        locationid: uDDr
+        queuedtasks:
+          SZyc: []
+        isenabled: false
+      ZLa0:
+        type: WIRING
+        location: world,-7.575274813231454,26.85,101.43743435632577
+        locationid: 0zNl
+        queuedtasks:
+          YgIj: []
+        isenabled: false
+      OXVH:
+        type: WIRING
+        location: world,1.5040750755335635,26.85,138.41628437984414
+        locationid: C87I
+        queuedtasks:
+          rkzA:
+          - jGbP
+          - vhF2
+          EwHj:
+          - ZLa0
+          - vhF2
+        isenabled: true
+      h3wM:
+        type: SWIPE_CARD
+        location: world,22.30000001192093,26.85,137.96271768442972
+        locationid: s4Qe
+        queuedtasks:
+          zhsf: []
+        isenabled: true
+      Qmdr:
+        type: CHART_COURSE
+        location: world,53.69999998807907,26.85,124.4258979851222
+        locationid: uDDr
+        queuedtasks:
+          ilYb: []
+        isenabled: true
+      iEql:
+        type: STABILIZE_STEERING
+        location: world,54.69999998807907,26.85,125.3408908913217
+        locationid: uDDr
+        queuedtasks:
+          28Ov: []
+        isenabled: true
+    sabotages:
+      OXYGEN:
+        timer: 45
+        location1: world,24.0142161307101,26.85,132.17623282341276
+        location2: world,24.43977250176034,26.85,122.0197504066949
+      LIGHTS:
+        timer: 0
+        location1: world,-17.97941828223597,26.85,141.30088494690554
+      COMMUNICATIONS:
+        timer: 0
+        location1: world,17.985324578364843,26.85,158.69999998807907
+      REACTOR_MELTDOWN:
+        timer: 45
+        location1: world,-48.459800343954505,26.85,139.40444894629016
+        location2: world,-48.46839546831235,26.85,118.48803069824861
+    locations:
+      0zNl:
+        name: Столовая
+        location: world,17.36293439802028,29.0625,121.92867433340791
+      s4Qe:
+        name: Управление
+        location: world,12.526208489609248,25.0,131.42463840797097
+      C87I:
+        name: Хранилище
+        location: world,8.407535692019222,25.0,158.5219263436595
+      Gbd0:
+        name: Связь
+        location: world,16.392520618240084,25.0,153.30000001192093
+      ithC:
+        name: Электричество
+        location: world,-14.989181666779274,25.0625,137.15824376778647
+      DGyZ:
+        name: Охрана
+        location: world,-33.52614080209537,25.0,126.49906587529169
+      UuhC:
+        name: Оружейная
+        location: world,44.29244624711878,29.0625,123.1669480653088
+      Olbk:
+        name: Медпункт
+        location: world,-13.969097281312084,26.0,128.01689311661735
+      uDDr:
+        name: Навигация
+        location: world,50.47737911249655,25.0,121.4789600758811
+      gtCV:
+        name: O2
+        location: world,21.3432580016979,25.0,122.47709187587
+      Wy11:
+        name: Реактор
+        location: world,-47.581834066101756,24.5,128.2313556475702
+      ecH1:
+        name: Щиты
+        location: world,26.305145985434542,25.0,151.47995221708675
+      CoNp:
+        name: Верхний Двигатель
+        location: world,-41.59337384893472,25.0,114.54998544101085
+      BsQ6:
+        name: Нижний Двигатель
+        location: world,-41.69999998807907,25.0,147.48750001192093
+    ventgroups:
+      BSF7:
+        id: 0
+        loop: true
+        vents:
+          a6cT:
+            location: world,48.5,26.85,122.5,-14.773411,11.577412
+            id: 0
+            locationid: uDDr
+          s94x:
+            location: world,30.5,26.85,104.5,2.3380127,-3.6176236
+            id: 1
+            locationid: UuhC
+      v5sO:
+        id: 1
+        loop: true
+        vents:
+          YnJe:
+            location: world,48.5,26.85,131.5,198.6249,2.894587
+            id: 0
+            locationid: uDDr
+          dcWl:
+            location: world,30.5,26.85,152.5,-187.77164,8.562695
+            id: 1
+            locationid: ecH1
+      usIh:
+        id: 2
+        loop: true
+        vents:
+          j0DT:
+            location: world,30.5,26.85,130.5,-45.10396,9.889393
+            id: 0
+            locationid: '----'
+          Bkhi:
+            location: world,16.5,26.85,115.5,-230.75244,4.5831146
+            id: 1
+            locationid: 0zNl
+          DlPQ:
+            location: world,13.5,26.85,140.5,-177.2539,6.2715025
+            id: 2
+            locationid: s4Qe
+      OG1C:
+        id: 3
+        loop: true
+        vents:
+          elKH:
+            location: world,-19.5,26.85,133.5,-47.540344,7.1759796
+            id: 0
+            locationid: ithC
+          SQgL:
+            location: world,-27.5,26.85,133.5,-193.41577,0.90503955
+            id: 1
+            locationid: DGyZ
+          heVP:
+            location: world,-21.5,26.85,126.5,-123.649475,7.5381737
+            id: 2
+            locationid: Olbk
+      0Ftf:
+        id: 4
+        loop: true
+        vents:
+          EIfa:
+            location: world,-32.5,26.85,106.5,-329.62616,6.0909796
+            id: 0
+            locationid: CoNp
+          bNez:
+            location: world,-50.5,26.85,120.5,-22.275024,4.2820463
+            id: 1
+            locationid: Wy11
+      Uw1b:
+        id: 5
+        loop: true
+        vents:
+          FnYM:
+            location: world,-48.5,26.85,136.5,-159.03394,3.6187668
+            id: 0
+            locationid: Wy11
+          IsyI:
+            location: world,-32.5,26.85,150.5,-196.90295,7.779396
+            id: 1
+            locationid: BsQ6
+    doorgroups:
+      NO1v:
+        id: 0
+        locationid: 0zNl
+        doors:
+          LKij:
+            id: 0
+            corner1: world,6,25,128
+            corner2: world,3,28,128
+          8A21:
+            id: 1
+            corner1: world,19,25,108
+            corner2: world,19,28,113
+          jUTz:
+            id: 2
+            corner1: world,-11,25,113
+            corner2: world,-11,28,108
+      LfSv:
+        id: 1
+        locationid: Olbk
+        doors:
+          MWjN:
+            id: 0
+            corner1: world,-20,25,115
+            corner2: world,-17,28,115
+      G2qV:
+        id: 2
+        locationid: CoNp
+        doors:
+          MYTS:
+            id: 0
+            corner1: world,-32,25,108
+            corner2: world,-32,28,113
+          ZnKw:
+            id: 1
+            corner1: world,-39,25,119
+            corner2: world,-36,28,119
+      9r9S:
+        id: 3
+        locationid: DGyZ
+        doors:
+          G8OF:
+            id: 0
+            corner1: world,-32,25,126
+            corner2: world,-32,28,131
+      FM5o:
+        id: 4
+        locationid: BsQ6
+        doors:
+          KQhW:
+            id: 0
+            corner1: world,-39,25,138
+            corner2: world,-36,28,138
+          eDcR:
+            id: 1
+            corner1: world,-32,25,143
+            corner2: world,-32,28,148
+      eFnS:
+        id: 5
+        locationid: ithC
+        doors:
+          57xJ:
+            id: 0
+            corner1: world,-20,25,149
+            corner2: world,-17,28,149
+      G0Rz:
+        id: 6
+        locationid: C87I
+        doors:
+          QCXz:
+            id: 0
+            corner1: world,-7,25,155
+            corner2: world,-7,28,150
+          pnj6:
+            id: 1
+            corner1: world,6,25,137
+            corner2: world,3,28,137
+          3ZUY:
+            id: 2
+            corner1: world,9,25,149
+            corner2: world,9,28,144
+    cameras:
+      hologramloc: world,-28.021032077285323,26.85,121.30024797575132
+      enable: true
+      cams:
+        WZAN:
+          id: 0
+          viewlocation: world,3.300000011920927,27.200000047683716,136.69999998807907,230.02144,
+            51.160126
+          camlocation: world,7.893835448925178,26.81898358353423,131.30000001192093,-303.2671,27.522964
+          locationid: s4Qe
+          fakeblocks:
+          - BLACK_CONCRETE,11,26,135
+          - BLACK_CONCRETE,11,25,135
+          - BLACK_CONCRETE,11,25,134
+          - BLACK_CONCRETE,11,26,134
+          - BLACK_CONCRETE,11,26,133
+          - BLACK_CONCRETE,11,25,133
+          - BLACK_CONCRETE,11,25,132
+          - BLACK_CONCRETE,11,25,131
+          - BLACK_CONCRETE,11,26,132
+          - BLACK_CONCRETE,11,26,131
+          - BLACK_CONCRETE,11,27,132
+          - BLACK_CONCRETE,11,27,131
+          - BLACK_CONCRETE,11,28,132
+          - BLACK_CONCRETE,11,28,131
+          - BLACK_CONCRETE,11,27,133
+          - BLACK_CONCRETE,11,28,133
+          - BLACK_CONCRETE,11,27,134
+          - BLACK_CONCRETE,11,28,134
+          - BLACK_CONCRETE,11,28,135
+          - BLACK_CONCRETE,11,27,135
+          - BLACK_CONCRETE,6,28,127
+          - BLACK_CONCRETE,6,27,127
+          - BLACK_CONCRETE,6,26,127
+          - BLACK_CONCRETE,6,25,127
+          - BLACK_CONCRETE,5,25,127
+          - BLACK_CONCRETE,5,26,127
+          - BLACK_CONCRETE,5,27,127
+          - BLACK_CONCRETE,5,28,127
+          - BLACK_CONCRETE,4,28,127
+          - BLACK_CONCRETE,4,27,127
+          - BLACK_CONCRETE,4,26,127
+          - BLACK_CONCRETE,4,25,127
+          - BLACK_CONCRETE,3,25,127
+          - BLACK_CONCRETE,3,26,127
+          - BLACK_CONCRETE,3,27,127
+          - BLACK_CONCRETE,3,28,127
+          - BLACK_CONCRETE,3,25,138
+          - BLACK_CONCRETE,4,25,138
+          - BLACK_CONCRETE,5,25,138
+          - BLACK_CONCRETE,6,25,138
+          - BLACK_CONCRETE,6,26,138
+          - BLACK_CONCRETE,5,26,138
+          - BLACK_CONCRETE,4,26,138
+          - BLACK_CONCRETE,3,26,138
+          - BLACK_CONCRETE,3,27,138
+          - BLACK_CONCRETE,4,27,138
+          - BLACK_CONCRETE,5,27,138
+          - BLACK_CONCRETE,6,27,138
+          - BLACK_CONCRETE,6,28,138
+          - BLACK_CONCRETE,5,28,138
+          - BLACK_CONCRETE,4,28,138
+          - BLACK_CONCRETE,3,28,138
+          fakeairblocks: []
+          lamplocation: world,7.705796731356852,26.039557502361575,131.30509460432415,-2.1220093,0
+        VXUX:
+          id: 1
+          viewlocation: world,45.761401310535376,27.200000047683716,126.70032464757394,-270.74945,
+            34.33735
+          camlocation: world,42.089157759332345,26.838222672557077,124.30000001192093,-290.16003,23.785088
+          locationid: uDDr
+          fakeblocks:
+          - BLACK_CONCRETE,27,28,125
+          - BLACK_CONCRETE,27,27,125
+          - BLACK_CONCRETE,27,26,125
+          - BLACK_CONCRETE,27,25,125
+          - BLACK_CONCRETE,27,25,124
+          - BLACK_CONCRETE,27,26,124
+          - BLACK_CONCRETE,27,27,124
+          - BLACK_CONCRETE,27,28,124
+          - BLACK_CONCRETE,27,28,123
+          - BLACK_CONCRETE,27,27,123
+          - BLACK_CONCRETE,27,26,123
+          - BLACK_CONCRETE,27,25,123
+          - BLACK_CONCRETE,27,25,122
+          - BLACK_CONCRETE,27,26,122
+          - BLACK_CONCRETE,27,27,122
+          - BLACK_CONCRETE,27,28,122
+          - BLACK_CONCRETE,27,28,121
+          - BLACK_CONCRETE,27,27,121
+          - BLACK_CONCRETE,27,26,121
+          - BLACK_CONCRETE,27,25,121
+          - BLACK_CONCRETE,27,25,120
+          - BLACK_CONCRETE,27,26,120
+          - BLACK_CONCRETE,27,27,120
+          - BLACK_CONCRETE,27,28,120
+          - BLACK_CONCRETE,47,25,129
+          - BLACK_CONCRETE,47,26,129
+          - BLACK_CONCRETE,47,27,129
+          - BLACK_CONCRETE,47,28,129
+          - BLACK_CONCRETE,47,28,128
+          - BLACK_CONCRETE,47,27,128
+          - BLACK_CONCRETE,47,26,128
+          - BLACK_CONCRETE,47,25,128
+          - BLACK_CONCRETE,47,25,127
+          - BLACK_CONCRETE,47,26,127
+          - BLACK_CONCRETE,47,27,127
+          - BLACK_CONCRETE,47,28,127
+          - BLACK_CONCRETE,47,28,126
+          - BLACK_CONCRETE,47,27,126
+          - BLACK_CONCRETE,47,26,126
+          - BLACK_CONCRETE,47,25,126
+          - BLACK_CONCRETE,47,25,125
+          - BLACK_CONCRETE,47,26,125
+          - BLACK_CONCRETE,47,27,125
+          - BLACK_CONCRETE,47,28,125
+          - BLACK_CONCRETE,47,28,124
+          - BLACK_CONCRETE,47,27,124
+          - BLACK_CONCRETE,47,26,124
+          - BLACK_CONCRETE,47,25,124
+          fakeairblocks:
+          - 40,25,130
+          - 40,26,130
+          - 40,27,130
+          - 40,28,130
+          - 41,25,130
+          - 41,26,130
+          - 41,27,130
+          - 41,28,130
+          - 40,28,131
+          - 40,27,131
+          - 40,26,131
+          - 40,25,131
+          - 42,25,130
+          - 42,26,130
+          - 42,27,130
+          - 42,28,130
+          - 41,28,131
+          - 41,26,131
+          - 41,25,131
+          - 41,27,131
+          - 40,26,132
+          - 40,25,132
+          - 40,25,133
+          - 40,26,133
+          - 40,27,133
+          - 40,27,132
+          - 40,28,132
+          - 40,28,133
+          - 41,28,132
+          - 41,27,132
+          - 41,26,132
+          - 41,25,132
+          - 42,28,131
+          - 42,27,131
+          - 42,26,131
+          - 42,25,131
+          - 43,25,130
+          - 43,26,130
+          - 43,27,130
+          - 43,28,130
+          - 35,25,128
+          - 35,26,128
+          - 35,27,128
+          - 35,28,128
+          - 34,25,128
+          - 34,26,128
+          - 34,27,128
+          - 34,28,128
+          - 35,25,127
+          - 35,26,127
+          - 35,27,127
+          - 35,28,127
+          - 35,28,126
+          - 35,27,126
+          - 35,26,126
+          - 35,25,126
+          - 34,25,126
+          - 34,26,126
+          - 34,27,126
+          - 34,28,126
+          - 40,26,123
+          - 40,27,123
+          - 40,28,123
+          - 40,25,123
+          - 40,25,122
+          - 40,26,122
+          - 40,27,122
+          - 40,28,122
+          - 41,25,123
+          - 41,26,123
+          - 41,27,123
+          - 41,28,123
+          - 42,25,123
+          - 41,26,124
+          - 42,26,124
+          - 42,26,123
+          - 42,27,123
+          - 42,28,123
+          - 41,27,122
+          - 41,28,122
+          - 41,26,122
+          - 41,25,122
+          - 40,25,121
+          - 40,26,121
+          - 40,27,121
+          - 40,28,121
+          - 33,25,128
+          - 33,26,128
+          - 33,27,128
+          - 33,28,128
+          - 32,28,128
+          - 32,27,128
+          - 32,26,128
+          - 32,25,128
+          - 31,25,128
+          - 31,26,128
+          - 31,27,128
+          - 31,28,128
+          - 30,25,128
+          - 30,26,128
+          - 30,27,128
+          - 30,28,128
+          - 40,26,124
+          lamplocation: world,40.365911635464016,25.706215872520513,124.3029437691612,-356.31683,0
+        pzoe:
+          id: 2
+          viewlocation: world,-12.416114284624214,27.186267415714173,108.3000000119209,-298.00455,
+            32.166542
+          camlocation: world,-12.416114284624214,27.186267415714173,108.3000000119209,-298.00455,
+            32.166542
+          locationid: Olbk
+          fakeblocks:
+          - BLACK_CONCRETE,-20,25,116
+          - BLACK_CONCRETE,-20,26,116
+          - BLACK_CONCRETE,-19,26,116
+          - BLACK_CONCRETE,-19,25,116
+          - BLACK_CONCRETE,-18,25,116
+          - BLACK_CONCRETE,-18,26,116
+          - BLACK_CONCRETE,-17,26,116
+          - BLACK_CONCRETE,-17,25,116
+          - BLACK_CONCRETE,-17,27,116
+          - BLACK_CONCRETE,-18,27,116
+          - BLACK_CONCRETE,-19,27,116
+          - BLACK_CONCRETE,-20,27,116
+          - BLACK_CONCRETE,-20,28,116
+          - BLACK_CONCRETE,-19,28,116
+          - BLACK_CONCRETE,-18,28,116
+          - BLACK_CONCRETE,-17,28,116
+          - BLACK_CONCRETE,-30,25,108
+          - BLACK_CONCRETE,-30,25,109
+          - BLACK_CONCRETE,-30,25,110
+          - BLACK_CONCRETE,-30,25,111
+          - BLACK_CONCRETE,-30,25,112
+          - BLACK_CONCRETE,-30,25,113
+          - BLACK_CONCRETE,-30,26,113
+          - BLACK_CONCRETE,-30,26,112
+          - BLACK_CONCRETE,-30,26,111
+          - BLACK_CONCRETE,-30,26,110
+          - BLACK_CONCRETE,-30,26,109
+          - BLACK_CONCRETE,-30,26,108
+          - BLACK_CONCRETE,-30,27,108
+          - BLACK_CONCRETE,-30,27,109
+          - BLACK_CONCRETE,-30,27,110
+          - BLACK_CONCRETE,-30,27,111
+          - BLACK_CONCRETE,-30,27,112
+          - BLACK_CONCRETE,-30,27,113
+          - BLACK_CONCRETE,-30,28,113
+          - BLACK_CONCRETE,-30,28,112
+          - BLACK_CONCRETE,-30,28,111
+          - BLACK_CONCRETE,-30,28,110
+          - BLACK_CONCRETE,-30,28,109
+          - BLACK_CONCRETE,-30,28,108
+          - BLACK_CONCRETE,-10,25,108
+          - BLACK_CONCRETE,-10,25,109
+          - BLACK_CONCRETE,-10,25,110
+          - BLACK_CONCRETE,-10,25,111
+          - BLACK_CONCRETE,-10,25,112
+          - BLACK_CONCRETE,-10,25,113
+          - BLACK_CONCRETE,-10,26,113
+          - BLACK_CONCRETE,-10,26,112
+          - BLACK_CONCRETE,-10,26,111
+          - BLACK_CONCRETE,-10,26,110
+          - BLACK_CONCRETE,-10,26,109
+          - BLACK_CONCRETE,-10,26,108
+          - BLACK_CONCRETE,-10,27,108
+          - BLACK_CONCRETE,-10,27,109
+          - BLACK_CONCRETE,-10,27,110
+          - BLACK_CONCRETE,-10,27,111
+          - BLACK_CONCRETE,-10,27,112
+          - BLACK_CONCRETE,-10,27,113
+          - BLACK_CONCRETE,-10,28,113
+          - BLACK_CONCRETE,-10,28,112
+          - BLACK_CONCRETE,-10,28,111
+          - BLACK_CONCRETE,-10,28,110
+          - BLACK_CONCRETE,-10,28,109
+          - BLACK_CONCRETE,-10,28,108
+          fakeairblocks: []
+          lamplocation: world,-12.560597047192964,25.669734743452636,108.30149951436101,-359.2702,0
+        cNdj:
+          id: 3
+          viewlocation: world,-38.69999998807908,27.200000047683716,135.16528103210348,-163.94421,
+            32.474678
+          camlocation: world,-39.42452261889439,27.0,126.30000001192093,-35.595703,38.859634
+          locationid: DGyZ
+          fakeblocks:
+          - BLACK_CONCRETE,-36,25,122
+          - BLACK_CONCRETE,-37,25,122
+          - BLACK_CONCRETE,-38,25,122
+          - BLACK_CONCRETE,-39,25,122
+          - BLACK_CONCRETE,-39,26,122
+          - BLACK_CONCRETE,-38,26,122
+          - BLACK_CONCRETE,-37,26,122
+          - BLACK_CONCRETE,-36,26,122
+          - BLACK_CONCRETE,-36,27,122
+          - BLACK_CONCRETE,-37,27,122
+          - BLACK_CONCRETE,-38,27,122
+          - BLACK_CONCRETE,-39,27,122
+          - BLACK_CONCRETE,-39,28,122
+          - BLACK_CONCRETE,-38,28,122
+          - BLACK_CONCRETE,-37,28,122
+          - BLACK_CONCRETE,-36,28,122
+          - BLACK_CONCRETE,-31,25,126
+          - BLACK_CONCRETE,-31,26,126
+          - BLACK_CONCRETE,-31,26,127
+          - BLACK_CONCRETE,-31,25,127
+          - BLACK_CONCRETE,-31,25,128
+          - BLACK_CONCRETE,-31,26,128
+          - BLACK_CONCRETE,-31,26,129
+          - BLACK_CONCRETE,-31,25,129
+          - BLACK_CONCRETE,-31,26,130
+          - BLACK_CONCRETE,-31,26,131
+          - BLACK_CONCRETE,-31,25,131
+          - BLACK_CONCRETE,-31,25,130
+          - BLACK_CONCRETE,-31,27,131
+          - BLACK_CONCRETE,-31,28,131
+          - BLACK_CONCRETE,-31,28,130
+          - BLACK_CONCRETE,-31,27,130
+          - BLACK_CONCRETE,-31,27,129
+          - BLACK_CONCRETE,-31,28,129
+          - BLACK_CONCRETE,-31,28,128
+          - BLACK_CONCRETE,-31,27,128
+          - BLACK_CONCRETE,-31,27,127
+          - BLACK_CONCRETE,-31,28,127
+          - BLACK_CONCRETE,-31,28,126
+          - BLACK_CONCRETE,-31,27,126
+          - BLACK_CONCRETE,-43,25,131
+          - BLACK_CONCRETE,-43,25,130
+          - BLACK_CONCRETE,-43,25,129
+          - BLACK_CONCRETE,-43,25,128
+          - BLACK_CONCRETE,-43,25,127
+          - BLACK_CONCRETE,-43,25,126
+          - BLACK_CONCRETE,-43,26,126
+          - BLACK_CONCRETE,-43,26,127
+          - BLACK_CONCRETE,-43,26,128
+          - BLACK_CONCRETE,-43,26,129
+          - BLACK_CONCRETE,-43,26,130
+          - BLACK_CONCRETE,-43,26,131
+          - BLACK_CONCRETE,-43,27,131
+          - BLACK_CONCRETE,-43,27,130
+          - BLACK_CONCRETE,-43,27,129
+          - BLACK_CONCRETE,-43,27,128
+          - BLACK_CONCRETE,-43,27,127
+          - BLACK_CONCRETE,-43,27,126
+          - BLACK_CONCRETE,-43,28,126
+          - BLACK_CONCRETE,-43,28,127
+          - BLACK_CONCRETE,-43,28,128
+          - BLACK_CONCRETE,-43,28,129
+          - BLACK_CONCRETE,-43,28,130
+          - BLACK_CONCRETE,-43,28,131
+          - BLACK_CONCRETE,-36,25,137
+          - BLACK_CONCRETE,-36,26,137
+          - BLACK_CONCRETE,-36,27,137
+          - BLACK_CONCRETE,-36,28,137
+          - BLACK_CONCRETE,-37,28,137
+          - BLACK_CONCRETE,-37,27,137
+          - BLACK_CONCRETE,-37,26,137
+          - BLACK_CONCRETE,-37,25,137
+          - BLACK_CONCRETE,-38,25,137
+          - BLACK_CONCRETE,-38,26,137
+          - BLACK_CONCRETE,-38,27,137
+          - BLACK_CONCRETE,-38,28,137
+          - BLACK_CONCRETE,-39,28,137
+          - BLACK_CONCRETE,-39,27,137
+          - BLACK_CONCRETE,-39,26,137
+          - BLACK_CONCRETE,-39,25,137
+          fakeairblocks:
+          - -40,25,132
+          - -40,26,132
+          - -40,27,132
+          - -40,28,132
+          - -41,28,132
+          - -41,27,132
+          - -41,26,132
+          - -41,25,132
+          - -40,25,133
+          - -40,26,133
+          - -40,27,133
+          - -40,28,133
+          - -40,25,134
+          - -40,26,134
+          - -40,27,134
+          - -40,28,134
+          - -35,25,132
+          - -35,26,132
+          - -35,27,132
+          - -35,28,132
+          - -34,25,132
+          - -34,26,132
+          - -34,27,132
+          - -34,28,132
+          - -42,25,132
+          - -42,26,132
+          - -42,27,132
+          - -42,28,132
+          - -41,25,133
+          - -41,26,133
+          - -41,28,133
+          - -41,27,133
+          lamplocation: world,-39.09322856431213,26.0,126.36125176627534,-32.87549,0
+    disablesprinting: false
+    disablejumping: false
+    disablemap: false
+    gametimer: 30
+    votingtime: 45
+    discussiontime: 30
+    proceedingtime: 5
+    enablevisualtasks: true
+    imposters: 1
+    commontasks: 1
+    longtasks: 1
+    shorttasks: 3
+    mettingsperplayer: 1
+    killcooldown: 30
+    meetingcooldown: 10
+    sabotagecooldown: 25
+    reportdistance: 3.5
+    enablereducedvision: true
+    hidehologramsoutofview: false
+    impostervision: 4.0
+    crewmatevision: 10
+    lightsoutvision: 3
+    primeshieldsblocks:
+    - world,30,26,155
+    - world,30,25,155
+    - world,31,25,154
+    - world,31,26,154
+    - world,32,26,153
+    - world,32,25,153
+    - world,33,25,152
+    - world,33,26,152
+    world: world
+    mapids: 14,15,16,17,18,19,20,21,22,23
+    waitinglobby: wait,68.5,58.0,-56.5,90.583984,0.4560693
+    confirmejects: true
