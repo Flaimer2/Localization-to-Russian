@@ -4,6 +4,11 @@
 Если, вы хотите чтобы я сделал перевод, пишите Issues)
 
 
+# Переводы:
+AlonsoLevels
+ImpostersMinigame
+
+
 
 # Связаться со мной
 Vk: https://vk.com/flaimer12
