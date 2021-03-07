@@ -982,15 +982,26 @@ items:
    # Version 2.3:
    cosmeticsSelector: # Cosmetics selector item in lobby
       mat: EMERALD
-      title: "&aCosmetics selector"
+      title: "&aВыбор косметике"
    cosmeticsSelector_coins:
       # %value% Player's coins
       mat: EMERALD
-      title: "&aCoins: %value%"
+      title: "&aДенег: %value%"
       slot: 49
    cosmeticsSelector_border:
       mat: AIR 
    ghost_leave:
-      title: "&c&lLeave game"
+      title: "&c&lВыйти из игры"
       mat: RED_BED
       slot: 7
+   # Version 2.4:
+   # %value% Current page
+   # %value1% Pages count
+   cosmeticsSelector_nextPage:
+      mat: "@eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTE3ZjM2NjZkM2NlZGZhZTU3Nzc4Yzc4MjMwZDQ4MGM3MTlmZDVmNjVmZmEyYWQzMjU1Mzg1ZTQzM2I4NmUifX19@"
+      title: "&9Следующая страница"
+      slot: 50
+   cosmeticsSelector_prevPage:
+      mat: "@eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWFlNzg0NTFiZjI2Y2Y0OWZkNWY1NGNkOGYyYjM3Y2QyNWM5MmU1Y2E3NjI5OGIzNjM0Y2I1NDFlOWFkODkifX19@"
+      title: "&9Предыдущая страница"
+      slot: 48
