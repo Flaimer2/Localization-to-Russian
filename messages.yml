@@ -39,6 +39,7 @@ game:
    playerVoted: "&a%value% проголосовал."
    skipped: "Пропускаем"
    tie: "Ничья"
+   cantTalk: "&cВы можете писать в чат на собраниях или когда вы призрак!"
    
    # --- Titles Section ---
    # When game starts
